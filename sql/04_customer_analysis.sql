@@ -97,3 +97,4 @@ FROM
     segmentation
 GROUP BY
      customer_segment
+

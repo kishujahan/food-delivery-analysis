@@ -24,6 +24,7 @@ FROM (
         name,
         last_purchased_date,
         CASE
+            WHEN last_purchased_date IS NULL THEN 'Never Ordered'
             WHEN last_purchased_date < (SELECT MAX(order_date) FROM orders_fact) - INTERVAL '90 days' 
                 THEN 'Churned'
             ELSE 'Active'
@@ -76,3 +77,6 @@ FROM
     stats
 GROUP BY 
     customer_status
+
+
+

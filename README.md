@@ -105,6 +105,16 @@ food-delivery-analysis/
 └── README.md
 ```
 
+## Dashboard Preview
+
+![Executive Summary](images/executive_summary.png)
+
+![Customer Intelligence](images/customer_intelligence.png)
+
+![Operational Performance](images/operational_performance.png)
+
+![Restaurant Health](images/restaurant_health.png)
+
 ## How to Run
 
 ### SQL
